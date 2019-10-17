@@ -1,0 +1,30 @@
+[
+  {
+    "theme": "bg-aqua",
+    "icon": "ion-bag",
+    "subject": "Pagamentos",
+    "stats": "150",
+    "link": "#"
+  },
+  {
+    "theme": "bg-green",
+    "icon": "ion-stats-bars",
+    "subject": "Taxa de Rejeição",
+    "stats": "53%",
+    "link": "#"
+  },
+  {
+    "theme": "bg-yellow",
+    "icon": "ion-person-add",
+    "subject": "Novos Usuários",
+    "stats": "44",
+    "link": "#"
+  },
+  {
+    "theme": "bg-red",
+    "icon": "ion-pie-graph",
+    "subject": "Visitantes",
+    "stats": "65",
+    "link": "#"
+  }
+]

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Dashboardv1Service} from '../services/dashboardv1.service';
+import {Statbox} from '../components/statbox/statbox.model';
 
 @Component({
   selector: 'app-dashboardv1',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Dashboardv1Component implements OnInit {
 
-  constructor() { }
+  statBoxes: Array<Statbox> = [];
+
+  constructor(public dashboardv1Service: Dashboardv1Service) { }
 
   ngOnInit() {
+    this.loadStatBoxes();
+  }
+
+  loadStatBoxes() {
+    this.dashboardv1Service.loadStatBoxes()
+      .subscribe((results: Array<Statbox>) => {
+        this.statBoxes = results;
+      });
   }
 
 }
